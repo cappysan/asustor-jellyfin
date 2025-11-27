@@ -1,0 +1,32 @@
+---
+# The following file enables recreating a templated output dir by executing:
+#   mk-scaffold clone "https://gitlab.com/cappysan/scaffolds/asustor-template.git" --input-file .answers.yml --output-dir output
+#
+
+answers:
+  # File generated with mk-scaffold:
+  #   cf. nitpick/scaffold-tpl-version-check.toml
+  template_used: "https://gitlab.com/cappysan/asustor/jellyfin"
+  template_used_version: "0.1.0"
+
+  author: "Julien Lecomte"
+  email: "julien@cappysan.dev"
+  maintainer: "Cappysan"
+  developer: "Jellyfin"
+
+  project_name: "Asustor Jellyfin APK"
+  project_slug: "cappysan-jellyfin"
+  project_description: "Asustor jellyfin application (dockerless)"
+
+  project_url: "https://gitlab.com/cappysan/asustor/jellyfin"
+  documentation_url: ""
+
+  license: "MIT"
+  version: "0.1.0"
+
+  has_pages: False
+  keep_placeholders: False
+
+  # Hidden fields
+  creation_year: "2025"
+  last_update: "2025-11-27 15:07:46"

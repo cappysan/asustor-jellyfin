@@ -1,0 +1,1 @@
+Asustor jellyfin application (dockerless)
