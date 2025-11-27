@@ -14,7 +14,7 @@ answers:
   maintainer: "Cappysan"
   developer: "Jellyfin"
 
-  project_name: "Asustor Jellyfin APK"
+  project_name: "Jellyfin"
   project_slug: "cappysan-jellyfin"
   project_description: "Asustor jellyfin application (dockerless)"
 
@@ -22,7 +22,7 @@ answers:
   documentation_url: ""
 
   license: "MIT"
-  version: "0.1.0"
+  version: "10.11.3-r3"
 
   has_pages: False
   keep_placeholders: False

@@ -1,0 +1,5 @@
+# cf: https://jellyfin.org/docs/general/administration/configuration/
+#
+# JELLYFIN_CONFIG_DIR=/share/Configuration/jellyfin/
+# JELLYFIN_CACHE_DIR=${JELLYFIN_CONFIG_DIR}/cache/
+# JELLYFIN_DATA_DIR=${JELLYFIN_CONFIG_DIR}/data/
