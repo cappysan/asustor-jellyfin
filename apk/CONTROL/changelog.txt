@@ -4,24 +4,8 @@ Changes relevant to the users of Asustor Jellyfin APK are documented here.
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
-## [Unreleased]
+## 10.11.3-r1 - 2025-11-28
 
 ### Added
 
-- Lorem ipsum sit dolor amet.
-
-### Changed
-
-- Lorem ipsum sit dolor amet.
-
-### Deprecated
-
-- Lorem ipsum sit dolor amet.
-
-### Fixed
-
-- Lorem ipsum sit dolor amet.
-
-## [1.2.3] - 2025-11-06
-
-(...)
+- New package
