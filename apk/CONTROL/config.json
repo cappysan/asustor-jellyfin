@@ -24,6 +24,24 @@
     "boot-priority": {
       "start-order": 50,
       "stop-order": 50
+    },
+    "port": [
+      8096,
+      8920
+    ]
+  },
+  "adm-desktop": {
+    "app": {
+      "port": 8096,
+      "protocol": "https",
+      "type": "custom",
+      "http_port": 8096,
+      "https_port": 8920,
+      "url": "/"
+    },
+    "privilege": {
+      "accessible": "administrators",
+      "customizable": true
     }
   }
 }
