@@ -2,7 +2,7 @@
 #
 set -eu
 
-APKG_PKG_VER="10.11.3-r1"
+APKG_PKG_VER="10.11.3-r2"
 APKG_PKG_DIR=/usr/local/AppCentral/cappysan-jellyfin
 
 cd "${APKG_PKG_DIR}"

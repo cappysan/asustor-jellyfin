@@ -10,7 +10,7 @@
     "maintainer": "Cappysan",
     "name": "Jellyfin",
     "package": "cappysan-jellyfin",
-    "version": "10.11.3-r1",
+    "version": "10.11.3-r2",
     "developer": "Jellyfin",
     "website": "https://gitlab.com/cappysan/asustor/jellyfin"
   },
