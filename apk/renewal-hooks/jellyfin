@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+#
+if test -f /usr/local/AppCentral/cappysan-jellyfin; then
+  /usr/local/AppCentral/cappysan-jellyfin/CONTROL/start-stop.sh restart
+fi
