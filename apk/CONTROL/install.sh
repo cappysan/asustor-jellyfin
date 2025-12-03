@@ -18,3 +18,4 @@ tar -xf /tmp/jellyfin.tar.xz -C "${APKG_PKG_DIR}"/
 mkdir -pv /share/Configuration/jellyfin
 chmod 750 /share/Configuration/jellyfin
 cp -n "${APKG_PKG_DIR}/conf.dist/network.xml" /share/Configuration/jellyfin/
+exit 0
