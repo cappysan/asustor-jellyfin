@@ -3,14 +3,15 @@
     "architecture": "any",
     "conflicts": [],
     "depends": [
-      "ffmpeg"
+      "ffmpeg",
+      "jq"
     ],
     "email": "julien@cappysan.dev",
     "firmware": "5.0.0",
     "maintainer": "Cappysan",
     "name": "Jellyfin",
     "package": "cappysan-jellyfin",
-    "version": "10.11.3-r2",
+    "version": "10.11.3-r3",
     "developer": "Jellyfin",
     "website": "https://gitlab.com/cappysan/asustor/jellyfin"
   },
@@ -22,12 +23,13 @@
       }
     ],
     "boot-priority": {
-      "start-order": 50,
-      "stop-order": 50
+      "start-order": 70,
+      "stop-order": 30
     },
     "port": [
       8096,
-      8920
+      8920,
+      7359
     ]
   },
   "adm-desktop": {
@@ -40,7 +42,7 @@
       "url": "/"
     },
     "privilege": {
-      "accessible": "administrators",
+      "accessible": "users",
       "customizable": true
     }
   }
