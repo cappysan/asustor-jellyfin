@@ -40,10 +40,6 @@
       "http_port": 8096,
       "https_port": 8920,
       "url": "/"
-    },
-    "privilege": {
-      "accessible": "users",
-      "customizable": true
     }
   }
 }
