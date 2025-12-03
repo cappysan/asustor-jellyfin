@@ -1,5 +1,13 @@
 # cf: https://jellyfin.org/docs/general/administration/configuration/
 #
+# Default ports are:
+#   - 8096 (active)
+#   - 8920 (requires configuration)
+#   - 7359 (udp autodiscovery)
+#
+# Certificate is located here: /usr/builtin/etc/certificate/ssl.p12
+#
 # JELLYFIN_CONFIG_DIR=/share/Configuration/jellyfin/
 # JELLYFIN_CACHE_DIR=${JELLYFIN_CONFIG_DIR}/cache/
 # JELLYFIN_DATA_DIR=${JELLYFIN_CONFIG_DIR}/data/
+# JELLYFIN_LOG_DIR=${JELLYFIN_CONFIG_DIR}/logs/

@@ -6,8 +6,8 @@
 answers:
   # File generated with mk-scaffold:
   #   cf. nitpick/scaffold-tpl-version-check.toml
-  template_used: "https://gitlab.com/cappysan/asustor/jellyfin"
-  template_used_version: "0.1.0"
+  template_used: "https://gitlab.com/cappysan/scaffolds/asustor-template.git"
+  template_used_version: "1.0.0"
 
   author: "Julien Lecomte"
   email: "julien@cappysan.dev"
@@ -29,4 +29,5 @@ answers:
 
   # Hidden fields
   creation_year: "2025"
-  last_update: "2025-11-27 15:07:46"
+  last_update: "2025-12-03 08:44:38"
+  copyright_string: "Julien Lecomte"

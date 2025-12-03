@@ -2,14 +2,12 @@
 #
 set -eu
 
-APKG_PKG_VER="10.11.3-r2"
 APKG_PKG_DIR=/usr/local/AppCentral/cappysan-jellyfin
+APKG_PKG_VER="$(cat CONTROL/config.json | jq .general.version | xargs)"
 
 cd "${APKG_PKG_DIR}"
 
-if test ! -f ./jellyfin/jellyfin; then
-  true
-elif test ! -f install; then
+if test -f ./jellyfin/jellyfin; then
   exit 0
 fi
 
@@ -17,4 +15,6 @@ wget "https://repo.jellyfin.org/files/server/linux/stable/v${APKG_PKG_VER%-*}/am
 rm -fr "${APKG_PKG_DIR}/jellyfin" || true
 tar -xf /tmp/jellyfin.tar.xz -C "${APKG_PKG_DIR}"/
 
-rm -f ${APKG_PKG_DIR}/install || true
+mkdir -pv /share/Configuration/jellyfin
+chmod 750 /share/Configuration/jellyfin
+cp -n "${APKG_PKG_DIR}/conf.dist/network.xml" /share/Configuration/jellyfin/
