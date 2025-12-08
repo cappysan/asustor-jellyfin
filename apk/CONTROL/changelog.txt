@@ -4,12 +4,13 @@ Changes relevant to the users of Asustor Jellyfin APK are documented here.
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
-## 10.11.3-r4 - UNRELEASED
+## 10.11.3-r5 - UNRELEASED
 
 ### Added
 
 - Added registered ports
 - Added jq dependency
+- Added certbot renewal hook
 
 
 ### Changed

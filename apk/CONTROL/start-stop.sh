@@ -14,7 +14,7 @@ fi
 case $1 in
   start)
     ./CONTROL/install.sh
-    start-stop-daemon -S -b -p /var/run/jellyfin.pid -x ./jellyfin/jellyfin
+    start-stop-daemon -S -b -m -p /var/run/jellyfin.pid -x ./jellyfin/jellyfin
     ;;
 
   stop)
