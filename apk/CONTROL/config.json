@@ -3,15 +3,14 @@
     "architecture": "any",
     "conflicts": [],
     "depends": [
-      "ffmpeg",
-      "jq"
+      "ffmpeg"
     ],
     "email": "julien@cappysan.dev",
     "firmware": "5.0.0",
     "maintainer": "Cappysan",
     "name": "Jellyfin",
     "package": "cappysan-jellyfin",
-    "version": "10.11.3-r5",
+    "version": "10.11.4-r1",
     "developer": "Jellyfin",
     "website": "https://gitlab.com/cappysan/asustor/jellyfin"
   },

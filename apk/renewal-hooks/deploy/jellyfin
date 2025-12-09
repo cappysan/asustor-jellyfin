@@ -1,5 +1,12 @@
 #!/usr/bin/env sh
 #
-if test -f /usr/local/AppCentral/cappysan-jellyfin/CONTROL/start-stop.sh; then
-  /usr/local/AppCentral/cappysan-jellyfin/CONTROL/start-stop.sh restart
+set -eu
+
+cd /usr/local/AppCentral/cappysan-jellyfin
+if test -f CONTROL/start-stop.sh; then
+  cp /usr/builtin/etc/certificate/ssl.p12 .
+  chown jellyfin:0 ssl.p12
+  chmod 600 ssl.p12
+
+  ./CONTROL/start-stop.sh restart
 fi

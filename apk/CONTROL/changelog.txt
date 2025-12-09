@@ -5,6 +5,15 @@ Changes relevant to the users of Asustor Jellyfin APK are documented here.
 This project adheres to [Semantic Versioning](https://semver.org/).
 
 
+## 10.11.4-r1 - 2025-12-10
+
+### Changed
+
+- Start daemon with `jellyfin` user instead of root.
+- When uninstalling, remove the user, and set configuration permissions to `root`
+- Removed jq dependency
+
+
 ## 10.11.3-r5 - 2025-12-09
 
 ### Added
