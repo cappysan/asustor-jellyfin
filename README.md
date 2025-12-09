@@ -44,6 +44,6 @@ Please refer to the upstream software documentation for details on their respect
 ## Links <a name="links"></a>
 
   * Website: [https://asustor.cappysan.dev/](https://asustor.cappysan.dev/)
-  * GitLab: [https://gitlab.com/cappysan/asustor/vim](https://gitlab.com/cappysan/asustor/jellyfin)
-  * GitHub: [https://github.com/cappysan/asustor-vim](https://github.com/cappysan/asustor-jellyfin)
+  * GitLab: [https://gitlab.com/cappysan/asustor/jellyfin](https://gitlab.com/cappysan/asustor/jellyfin)
+  * GitHub: [https://github.com/cappysan/asustor-jellyfin](https://github.com/cappysan/asustor-jellyfin)
   * Discord: [https://discord.gg/SsY3CAdp4Q](https://discord.gg/SsY3CAdp4Q)
