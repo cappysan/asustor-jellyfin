@@ -10,7 +10,7 @@ wget --progress none -O /tmp/jellyfin.tar.xz "${URL}"
 
 if test -d "${APKG_PKG_DIR}/jellyfin"; then
   rm -fr "${APKG_PKG_DIR}/jellyfin"
-fi  
+fi
 
 tar -vxf /tmp/jellyfin.tar.xz -C "${APKG_PKG_DIR}"/
 rm /tmp/jellyfin.tar.xz
