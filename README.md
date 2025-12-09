@@ -48,7 +48,7 @@ You can help support this project, and all Cappysan projects, through the follow
 
 - 🛠️ Contribute by submitting issues, improving documentation, or creating pull requests to help the project grow.
 
-- ☕ Support financially through [Buy Me a Coffee](https://buymeacoffee.com/cappysan), [Patreon](https://www.patreon.com/c/cappysan), [GitHub](https://github.com/sponsors/cappysan), or [Bitcoin (bc1qaz86l247df34h2q657c6zfs5l33r76s4ewxg4v)](https://addrs.to/pay?token=BTC&address=bc1qaz86l247df34h2q657c6zfs5l33r76s4ewxg4v&name=cappysan). Your contributions directly sustain ongoing development and maintenance, including server costs.
+- ☕ Support financially through [Buy Me a Coffee](https://buymeacoffee.com/cappysan), [Patreon](https://www.patreon.com/c/cappysan), [GitHub](https://github.com/sponsors/cappysan), or [Bitcoin (bc1qaz86l247df34h2q657c6zfs5l33r76s4ewxg4v)](https://addrs.to/pay/BTC/bc1qaz86l247df34h2q657c6zfs5l33r76s4ewxg4v). Your contributions directly sustain ongoing development and maintenance, including server costs.
 
 Your support ensures these projects continue to improve, expand, and remain freely available to everyone.
 
