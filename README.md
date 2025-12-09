@@ -18,12 +18,31 @@ The APK application is available as a GitLab release, and on [https://asustor.ca
 
 The APK application is not available as an Asustor App Central application as Asustor does not accept duplicates, even if one is docker based and this one is not.
 
+**Installation Steps:**
+
+- Download the APK file  
+- Enter the Asustor App Center in your Asustor NAS UI.  
+- Enter the 'Management" tab in the App Center,  
+- Enter the "Manual Install" tab from the "Management" tab  
+- Select the previously downloaded file for the "Browse" input box  
+- Click "Upload" and follow further instructions from pop-up box.  
+
+**Usage:**
+
+Jellyfin HTTP UI will be available on port 8096.
+
+If configured from within Jellyfin UI, the Jellyfin HTTPS UI will be available on port 8920.
+
+It is possible to use Cappysan Certbot and Apache package to serve Jellyfin on the default HTTPS port (ie: 443)
+
+A "Configuration" shared folder is created during installation. It should be configured to only allow admins to edit the Jellyfin configuration. Shared folder can be accessed through SSH (ie: /share/Configuration), or via NFS/SMB/FTP depending on your configured settings.
+
 
 ## Support & Sponsorship <a name="support"></a>
 
 You can help support this project, and all Cappysan projects, through the following actions:
 
-- ⭐Star the repository on GitLab, GitHub, or both to increase visibility and community engagement.
+- ⭐ Star the repository on GitLab, GitHub, or both to increase visibility and community engagement.
 
 - 💬 Join the Discord community: [https://discord.gg/SsY3CAdp4Q](https://discord.gg/SsY3CAdp4Q) to connect, contribute, share feedback, and/or stay updated.
 
