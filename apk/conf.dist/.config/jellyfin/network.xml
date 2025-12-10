@@ -2,8 +2,8 @@
 <NetworkConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <BaseUrl />
   <EnableHttps>true</EnableHttps>
-  <RequireHttps>true</RequireHttps>
-  <CertificatePath>/usr/builtin/etc/certificate/ssl.p12</CertificatePath>
+  <RequireHttps>false</RequireHttps>
+  <CertificatePath>/usr/local/AppCentral/cappysan-jellyfin/ssl.p12</CertificatePath>
   <InternalHttpPort>8096</InternalHttpPort>
   <InternalHttpsPort>8920</InternalHttpsPort>
   <PublicHttpPort>8096</PublicHttpPort>

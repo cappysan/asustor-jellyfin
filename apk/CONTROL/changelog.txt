@@ -5,6 +5,12 @@ Changes relevant to the users of Cappysan's Asustor Jellyfin APK are documented 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
 
+## 10.11.4-r2 - 2025-12-11
+
+### Changed
+
+- Enable HTTPS by default
+
 ## 10.11.4-r1 - 2025-12-10
 
 ### Changed
