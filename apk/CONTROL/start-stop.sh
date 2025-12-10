@@ -1,24 +1,28 @@
 #!/usr/bin/env sh
 #
-cd /usr/local/AppCentral/cappysan-jellyfin
+APKG_PKG_NAME=cappysan-jellyfin
+APKG_PKG_SHORT_NAME="${APKG_PKG_NAME#*-}"
+APKG_PKG_DIR=/usr/local/AppCentral/${APKG_PKG_SHORT_NAME}
 
-export JELLYFIN_CONFIG_DIR=/share/Configuration/jellyfin/
-export JELLYFIN_CACHE_DIR=${JELLYFIN_CONFIG_DIR}/cache/
-export JELLYFIN_DATA_DIR=${JELLYFIN_CONFIG_DIR}/data/
-export JELLYFIN_LOG_DIR=${JELLYFIN_CONFIG_DIR}/logs/
-export HOME=${JELLYFIN_CONFIG_DIR}
+cd ${APKG_PKG_DIR} || exit 1
 
-if test -f /share/Configuration/jellyfin/env; then
-  source /share/Configuration/jellyfin/env
+export JELLYFIN_CFG_DIR=/share/Configuration/jellyfin/
+export JELLYFIN_CACHE_DIR=${JELLYFIN_CFG_DIR}/cache/
+export JELLYFIN_DATA_DIR=${JELLYFIN_CFG_DIR}/data/
+export JELLYFIN_LOG_DIR=${JELLYFIN_CFG_DIR}/logs/
+
+if test -f /share/Configuration/${APKG_PKG_SHORT_NAME}/env; then
+  source /share/Configuration/${APKG_PKG_SHORT_NAME}/env
 fi
+export HOME=${JELLYFIN_CFG_DIR}
+export PID_FILE=/var/run/${APKG_PKG_SHORT_NAME}.pid
 
-export PID_FILE=/var/run/jellyfin.pid
 
 case $1 in
   start)
     # Clear the remux logs
     rm -f "${JELLYFIN_LOG_DIR:-/nonexistent}"/FFmpeg.Remux-*.log
-    start-stop-daemon -S -b -m -p ${PID_FILE} -c jellyfin:nogroup -x ./jellyfin/jellyfin "./jellyfin/jellyfin"
+    start-stop-daemon -S -b -m -p ${PID_FILE} -c jellyfin:nogroup -x ./jellyfin/jellyfin
     ;;
 
   stop)

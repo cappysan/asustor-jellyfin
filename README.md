@@ -46,7 +46,7 @@ By default, no configuration is required for Jellyfin to operate.
 The Jellyfin HTTP interface is available on port 8096.
 
 To enable HTTPS, configure it through the Jellyfin user interface.
-The SSL certificate is located at: `/share/Configuration/jellyfin/ssl.p12`.
+The SSL certificate is located at: `/usr/local/AppCentral/cappysan-jellyfin/ssl.p12`.
 The default HTTPS port is 8920.
 
 You may also use the Cappysan Certbot and Apache packages to serve Jellyfin over the standard HTTPS port (443) and disable the default Jellyfin ports if desired.

@@ -1,12 +1,9 @@
 #!/usr/bin/env sh
 #
-if test "x${APKG_PKG_DIR}" = x; then
-  echo "error: required env var APKG_PKG_DIR not set" >&2
-  exit 1
-elif test "x${APKG_PKG_NAME}" = x; then
-  echo "error: required env var APKG_PKG_NAME not set" >&2
-  exit 1
-elif test "x${APKG_PKG_VER}" = x; then
+APKG_PKG_NAME=cappysan-jellyfin
+APKG_PKG_DIR=/usr/local/AppCentral/${APKG_PKG_NAME}
+
+if test "x${APKG_PKG_VER}" = x; then
   echo "error: required env var APKG_PKG_VER not set" >&2
   exit 1
 fi
@@ -27,9 +24,6 @@ URL="https://repo.jellyfin.org/files/server/linux/stable/v${APKG_PKG_SHORT_VER}/
 wget --progress none -O ${APKG_TAR_FILE} "${URL}" || exit 1
 
 # Replace application by new application
-if test -d "${APKG_PKG_DIR}/jellyfin"; then
-  rm -fr "${APKG_PKG_DIR}/jellyfin"
-fi
 tar -vxf ${APKG_TAR_FILE} -C "${APKG_PKG_DIR}"/ || exit 1
 rm -f ${APKG_TAR_FILE}
 
