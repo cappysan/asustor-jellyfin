@@ -2,7 +2,7 @@
 #
 APKG_PKG_NAME=cappysan-jellyfin
 APKG_PKG_SHORT_NAME="${APKG_PKG_NAME#*-}"
-APKG_PKG_DIR=/usr/local/AppCentral/${APKG_PKG_SHORT_NAME}
+APKG_PKG_DIR=/usr/local/AppCentral/${APKG_PKG_NAME}
 
 cd ${APKG_PKG_DIR} || exit 1
 
@@ -14,7 +14,7 @@ export JELLYFIN_LOG_DIR=${JELLYFIN_CFG_DIR}/logs/
 if test -f /share/Configuration/${APKG_PKG_SHORT_NAME}/env; then
   source /share/Configuration/${APKG_PKG_SHORT_NAME}/env
 fi
-export HOME=${JELLYFIN_CFG_DIR}
+export HOME=/share/Configuration/${APKG_PKG_SHORT_NAME}
 export PID_FILE=/var/run/${APKG_PKG_SHORT_NAME}.pid
 
 

@@ -19,7 +19,7 @@ The APK application is available as a GitLab release, and on [https://asustor.ca
 The APK application is not available as an Asustor App Central application as Asustor does not accept duplicates, even if one is docker based and this one is not.
 
 
-### Application Installation
+### Application Installation <a name="installation"></a>
 
 **Step 1**
 
@@ -60,7 +60,7 @@ You can help support this project, and all Cappysan projects, through the follow
 
 - ⭐ Star the repository on GitLab, GitHub, or both to increase visibility and community engagement.
 
-- 💬 Join the Discord community: [https://discord.gg/SsY3CAdp4Q](https://discord.gg/SsY3CAdp4Q) to connect, contribute, share feedback, and/or stay updated
+- 💬 Join the Discord community: [https://discord.gg/SsY3CAdp4Q](https://discord.gg/SsY3CAdp4Q) to connect, contribute, share feedback, and/or stay updated.
 
 - 🛠️ Contribute by submitting issues, improving documentation, or creating pull requests to help the project grow.
 

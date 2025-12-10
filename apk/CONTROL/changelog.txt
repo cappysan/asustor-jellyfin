@@ -1,6 +1,6 @@
 # Changelog
 
-Changes relevant to the users to Cappysan's Asustor Jellyfin APK are documented here.
+Changes relevant to the users of Cappysan's Asustor Jellyfin APK are documented here.
 
 This project adheres to [Semantic Versioning](https://semver.org/).
 
