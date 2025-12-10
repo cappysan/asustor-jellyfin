@@ -18,24 +18,40 @@ The APK application is available as a GitLab release, and on [https://asustor.ca
 
 The APK application is not available as an Asustor App Central application as Asustor does not accept duplicates, even if one is docker based and this one is not.
 
-**Installation Steps:**
 
-- Download the APK file  
-- Enter the Asustor App Center in your Asustor NAS UI.  
-- Enter the 'Management" tab in the App Center,  
-- Enter the "Manual Install" tab from the "Management" tab  
+### Application Installation
+
+**Step 1**
+
+- Download the APK file from Cappysan's Asustor website ([https://asustor.cappysan.dev/2025/12/04/jellyfin/](https://asustor.cappysan.dev/2025/12/04/jellyfin/)  
+- Enter the Asustor App Center from your Asustor NAS user interface  
+- Enter the 'Management" tab in the App Center  
+- Enter the "Manual Install" left tab from the "Management" tab  
 - Select the previously downloaded file for the "Browse" input box  
-- Click "Upload" and follow further instructions from pop-up box.  
+- Click "Upload" and follow further instructions from pop-up box  
 
-**Usage:**
+**Step 2**
 
-Jellyfin HTTP UI will be available on port 8096.
+In order to secure the newly created "Configuration" shared folder:
 
-If configured from within Jellyfin UI, the Jellyfin HTTPS UI will be available on port 8920.
+- Enter the "Access Control" tab in the App Center  
+- Enter the "Shared folders" left tab from the "Access Control" tab  
+- Select the "Configuration" folder to allow only the required users to modify the configuration  
 
-It is possible to use Cappysan Certbot and Apache package to serve Jellyfin on the default HTTPS port (ie: 443)
 
-A "Configuration" shared folder is created during installation. It should be configured to only allow admins to edit the Jellyfin configuration. Shared folder can be accessed through SSH (ie: /share/Configuration), or via NFS/SMB/FTP depending on your configured settings.
+### Configuration
+
+By default, no configuration is required for Jellyfin to operate.
+
+The Jellyfin HTTP interface is available on port 8096.
+
+To enable HTTPS, configure it through the Jellyfin user interface.
+The SSL certificate is located at: `/share/Configuration/jellyfin/ssl.p12`.
+The default HTTPS port is 8920.
+
+You may also use the Cappysan Certbot and Apache packages to serve Jellyfin over the standard HTTPS port (443) and disable the default Jellyfin ports if desired.
+
+Files within the `Configuration` shared folder can be modified via SSH or by exporting the shared folder through NFS, SMB, FTP, ...
 
 
 ## Support & Sponsorship <a name="support"></a>
@@ -44,7 +60,7 @@ You can help support this project, and all Cappysan projects, through the follow
 
 - ⭐ Star the repository on GitLab, GitHub, or both to increase visibility and community engagement.
 
-- 💬 Join the Discord community: [https://discord.gg/SsY3CAdp4Q](https://discord.gg/SsY3CAdp4Q) to connect, contribute, share feedback, and/or stay updated.
+- 💬 Join the Discord community: [https://discord.gg/SsY3CAdp4Q](https://discord.gg/SsY3CAdp4Q) to connect, contribute, share feedback, and/or stay updated
 
 - 🛠️ Contribute by submitting issues, improving documentation, or creating pull requests to help the project grow.
 
