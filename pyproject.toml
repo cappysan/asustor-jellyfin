@@ -5,7 +5,7 @@
 # Setup
 # ------------------------------------------------------------------------------
 name = "cappysan-jellyfin"
-version = "10.11.4-r1"
+version = "10.11.4-r2"
 authors = [
   {name = "Julien Lecomte", email = "julien@cappysan.dev"}
 ]
@@ -17,7 +17,7 @@ license = "MIT"
 # Other tools
 # ------------------------------------------------------------------------------
 [tool.bumpversion]
-current_version = "10.11.4-r1"
+current_version = "10.11.4-r2"
 parse = """(?x)
   (?P<major>0|[1-9]\\d*)\\.
   (?P<minor>0|[1-9]\\d*)\\.
