@@ -23,10 +23,9 @@ parse = """(?x)
   (?P<minor>0|[1-9]\\d*)\\.
   (?P<patch>0|[1-9]\\d*)
   (?:
-    -                               # dash separator for pre-release section
-    (?P<seg_l>r)                    # release label
-    (?:(?P<seg_n>0|[1-9]\\d*))      # version number
-  )?                                # release section is optional
+    -r                    # dash separator for pre-release section
+    (?P<seg_n>[1-9]\\d*)  # version number
+  )?                      # release section is optional
 """
 search = "{current_version}"
 replace = "{new_version}"
@@ -50,13 +49,8 @@ pre_commit_hooks = [
 post_commit_hooks = []
 
 serialize = [
-  "{major}.{minor}.{patch}-{seg_l}{seg_n}",
-  "{major}.{minor}.{patch}",
+  "{major}.{minor}.{patch}-r{seg_n}"
 ]
-
-[tool.bumpversion.parts.seg_l]
-values = [ "r"]
-optional_value = "r"
 
 [tool.bumpversion.parts.seg_n]
 first_value = "1"
